@@ -1,6 +1,7 @@
 import axios from "axios";
 
-let apiUrl = "http://localhost:8000/api"
+// let apiUrl = "http://localhost:8000/api"
+let apiUrl = "https://startoon-labs-backend.vercel.app/api"
 
 //SignUp function
 const signup = async({data}) =>{
