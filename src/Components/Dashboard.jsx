@@ -20,9 +20,9 @@ function Dashboard() {
 
   const fetchdata = async() => {
     let token = localStorage.getItem("token");
-    console.log("test", token)
+    // console.log("test", token)
     let details  = await getuserdata({token})
-    console.log(details)
+    // console.log(details)
     if(details && details.message === "User Details !"){
        setUserType("user")
        setData(details.data)

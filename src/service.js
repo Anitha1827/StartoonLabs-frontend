@@ -17,7 +17,6 @@ const signup = async({data}) =>{
 const login = async({data}) =>{
     try {
         let response = await axios.post(`${apiUrl}/login`,data)
-        console.log(response)
         return response.data.token
     } catch (error) {
         alert("try again later")       
